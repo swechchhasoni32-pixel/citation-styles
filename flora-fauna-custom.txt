@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
+  <info>
+    <title>Flora and Fauna Custom Style</title>
+    <id>http://www.zotero.org/styles/flora-fauna-custom</id>
+    <link href="http://www.zotero.org/styles/flora-fauna-custom" rel="self"/>
+    <author>
+      <name>Custom</name>
+    </author>
+    <category citation-format="numeric"/>
+    <updated>2026-03-24T00:00:00+00:00</updated>
+  </info>
+
+  <!-- CITATIONS: SUPERSCRIPT -->
+  <citation collapse="citation-number">
+    <layout vertical-align="sup">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <!-- BIBLIOGRAPHY -->
+  <bibliography>
+    
+    <!-- SORT ALPHABETICALLY -->
+    <sort>
+      <key variable="author"/>
+    </sort>
+
+    <layout suffix=".">
+      
+      <!-- AUTHORS -->
+      <names variable="author" delimiter=", ">
+        <name form="short" initialize-with=""/>
+      </names>
+      <text value=". "/>
+
+      <!-- TITLE -->
+      <text variable="title"/>
+      <text value=". "/>
+
+      <!-- JOURNAL (ABBREVIATED) -->
+      <text variable="container-title" form="short"/>
+      <text value=". "/>
+
+      <!-- YEAR -->
+      <date variable="issued">
+        <date-part name="year"/>
+      </date>
+      <text value=";"/>
+
+      <!-- VOLUME (ISSUE) -->
+      <text variable="volume"/>
+      <group prefix="(" suffix=")">
+        <text variable="issue"/>
+      </group>
+      <text value=":"/>
+
+      <!-- PAGES -->
+      <text variable="page"/>
+
+    </layout>
+  </bibliography>
+</style>
