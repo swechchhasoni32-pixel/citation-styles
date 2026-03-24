@@ -2,16 +2,15 @@
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0">
   <info>
     <title>Flora and Fauna Custom Style</title>
-    <id>http://www.zotero.org/styles/flora-fauna-custom</id>
-    <link href="http://www.zotero.org/styles/flora-fauna-custom" rel="self"/>
+    <id>http://www.zotero.org/styles/flora-fauna-custom-mendeley</id>
     <author>
       <name>Custom</name>
     </author>
     <category citation-format="numeric"/>
-    <updated>2026-03-24T00:00:00+00:00</updated>
+    <updated>2026-03-25T00:00:00+00:00</updated>
   </info>
 
-  <!-- CITATIONS: SUPERSCRIPT -->
+  <!-- CITATIONS: SUPERSCRIPT NUMERIC -->
   <citation collapse="citation-number">
     <layout vertical-align="sup">
       <text variable="citation-number"/>
@@ -21,41 +20,41 @@
   <!-- BIBLIOGRAPHY -->
   <bibliography>
     
-    <!-- SORT ALPHABETICALLY -->
+    <!-- Sort alphabetically by author -->
     <sort>
       <key variable="author"/>
     </sort>
 
     <layout suffix=".">
       
-      <!-- AUTHORS -->
+      <!-- Authors -->
       <names variable="author" delimiter=", ">
         <name form="short" initialize-with=""/>
       </names>
       <text value=". "/>
 
-      <!-- TITLE -->
+      <!-- Article title -->
       <text variable="title"/>
       <text value=". "/>
 
-      <!-- JOURNAL (ABBREVIATED) -->
+      <!-- Journal title (abbreviated) -->
       <text variable="container-title" form="short"/>
       <text value=". "/>
 
-      <!-- YEAR -->
+      <!-- Year -->
       <date variable="issued">
         <date-part name="year"/>
       </date>
       <text value=";"/>
 
-      <!-- VOLUME (ISSUE) -->
+      <!-- Volume and Issue -->
       <text variable="volume"/>
       <group prefix="(" suffix=")">
         <text variable="issue"/>
       </group>
       <text value=":"/>
 
-      <!-- PAGES -->
+      <!-- Pages -->
       <text variable="page"/>
 
     </layout>
